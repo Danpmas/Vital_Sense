@@ -42,7 +42,7 @@ https://github.com/user-attachments/assets/14089d7c-2337-4e7b-b04f-dddde65c5c34
 
 ## File Descriptions
 
-- `QUEST.ino`: Arduino code for reading SpO2 and heart rate data from the MAX30105 sensor and sending it to the serial port.
+- `QUEST.ino`: Arduino code for reading SpO2 and heart rate data from the MAX30102 sensor and sending it to the serial port.
 
 - `arduino.py`: Python script for receiving SpO2 and heart rate data from the serial port and logging it to a .txt file.
 
