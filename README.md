@@ -51,3 +51,8 @@ https://github.com/user-attachments/assets/14089d7c-2337-4e7b-b04f-dddde65c5c34
 - Make sure the Arduino and Python scripts are both running while collecting data, with the Arduino code run first.
 - The MAX30102 sensor has had moments where it does not turn on and collect data, the solution to this issue is still unknown.
 - The sensor's accuracy still fluctuates. Adjustments may be made to several variables to fix this, two of the most notable being the LED brightness and sample rate.
+- For the breadboard set up (when using an LED display), the following configuration was used:
+![vital_sense_front](https://github.com/user-attachments/assets/4fa6b6d9-eab4-4f2d-a677-48cb2b502e9c)
+![vital_sense_back](https://github.com/user-attachments/assets/33bc6536-ded1-45f2-9d85-72b938b763bb)
+
+
