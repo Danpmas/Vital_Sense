@@ -1,10 +1,10 @@
 # VitalSense Blood Oxygen & Heart Rate Sensor
 
-This project provides a simple SpO2 (Blood Oxygen Saturation) and heart rate monitoring system using an Arduino Uno board and a MAX30105 sensor. The Arduino code reads sensor data and sends it to a Python script via serial communication, where the data is logged to a .txt file.
+This project provides a simple SpO2 (Blood Oxygen Saturation) and heart rate monitoring system using an Arduino Uno board and a MAX30102 sensor. The Arduino code reads sensor data and sends it to a Python script via serial communication, where the data is logged to a .txt file.
 
 ## Arduino Setup
 
-1. Connect the MAX30105 sensor to your Arduino Uno board according to the wiring diagram provided in the Arduino code.
+1. Connect the MAX30102 sensor to your Arduino Uno board according to the wiring diagram provided in the Arduino code.
 
 2. Install the required libraries:
    - Wire library
@@ -30,9 +30,11 @@ This project provides a simple SpO2 (Blood Oxygen Saturation) and heart rate mon
 
 3. Modify the serial port name in the Python script to match the port your Arduino Uno board is connected to. You can find the port name in the Arduino IDE under `Tools > Port`.
 
-4. Run the Python script. This will continuously read data from the Arduino board and log it to a .txt file.
+4. Run the QUEST.ino code, making sure the red light on the MAX30102 sensor is on.
+   
+5. Run the Python script. This will continuously read data from the Arduino board and log it to a .txt file.
 
-5. Place your finger on the MAX30105 sensor to measure SpO2 and heart rate. The data will be logged to the .txt file.
+6. Place your finger on the MAX30102 sensor to measure SpO2 and heart rate. The data will be logged to the .txt file.
 
 ## File Descriptions
 
@@ -42,4 +44,6 @@ This project provides a simple SpO2 (Blood Oxygen Saturation) and heart rate mon
 
 ## Additional Notes
 
-- Make sure the Arduino and Python scripts are both running while collecting data.
+- Make sure the Arduino and Python scripts are both running while collecting data, with the Arduino code run first.
+- The MAX30102 sensor has had moments where it does not turn on and collect data, the solution to this issue is still unknown.
+- The sensor's accuracy still fluctuates. Adjustments may be made to several variables to fix this, two of the most notable being the LED brightness and sample rate.
