@@ -21,7 +21,7 @@ This project provides a simple SpO2 (Blood Oxygen Saturation) and heart rate mon
    ```
    pip install pyserial
    ```
-
+   
 ## Running the Project
 
 1. Connect your Arduino Uno board to your computer via USB.
@@ -35,6 +35,10 @@ This project provides a simple SpO2 (Blood Oxygen Saturation) and heart rate mon
 5. Run the Python script. This will continuously read data from the Arduino board and log it to a .txt file.
 
 6. Place your finger on the MAX30102 sensor to measure SpO2 and heart rate. The data will be logged to the .txt file.
+
+## DEMO Video
+
+https://github.com/user-attachments/assets/14089d7c-2337-4e7b-b04f-dddde65c5c34
 
 ## File Descriptions
 
